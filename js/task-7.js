@@ -21,13 +21,13 @@ const addLogin = function(allLogins, login) {
         return;
     }
     if (isLoginUnique(allLogins, login) === false) {
-         console.log('Такой логин уже используется!');
-        return;
+         
+        return 'Такой логин уже используется!';
     }
     allLogins.push(login);
     console.log(allLogins);
-    console.log('Логин успешно добавлен!');
-    return;
+    
+    return 'Логин успешно добавлен!';
 }
 
 
